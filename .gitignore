@@ -1,0 +1,13 @@
+/vendor/
+/build/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+*.log
+connection.json
+store.json
+*.sock
+node_modules/
+.venv/

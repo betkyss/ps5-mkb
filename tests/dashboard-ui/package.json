@@ -1,0 +1,1 @@
+{"private":true,"description":"Offline DOM regression runner only; no production Node dependency","devDependencies":{"jsdom":"26.1.0"}}

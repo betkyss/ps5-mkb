@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(mkb_settings_import LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+add_executable(mkb-settings-import main.cpp)
+target_link_libraries(mkb-settings-import PRIVATE Qt6::Core)
+enable_testing()
+add_test(NAME isolated-settings-copy COMMAND mkb-settings-import --self-test)
