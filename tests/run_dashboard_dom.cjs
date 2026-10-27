@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path');
 const {JSDOM}=require('./dashboard-ui/node_modules/jsdom');
 const root=path.resolve(__dirname,'..');
-const preset=JSON.parse(fs.readFileSync(path.join(root,'profiles/arc-raiders-dashboard.json'),'utf8'));
+const preset=JSON.parse(fs.readFileSync(path.join(root,'tests/profile-fixture.json'),'utf8'));
 const fixture=JSON.parse(require('node:child_process').execFileSync('python3',['-c',
  `import json;from dashboard.schema import CODES,RESERVED,ACTIONS;from dashboard.store import RECOMMENDED;print(json.dumps(dict(codes=CODES,reserved=sorted(RESERVED),actions=ACTIONS,recommended=RECOMMENDED)))`],{cwd:root}));
 fixture.csrf='test';fixture.serviceInstance='instance-1';fixture.store={revision:1,selected:'arc',profiles:{arc:preset},applied:null,gameSettings:{actual:fixture.recommended,confirmedAt:''}};

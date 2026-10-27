@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "name": "ARC Raiders · консольный preset",
+  "dpi": 0,
+  "binds": {
+    "13": "W",
+    "0": "A",
+    "1": "S",
+    "2": "D",
+    "49": "Cross",
+    "15": "Box",
+    "14": "Box",
+    "8": "Moon",
+    "12": "L1",
+    "3": "R1",
+    "56": "L3",
+    "60": "L3",
+    "126": "Up",
+    "125": "Down",
+    "123": "Left",
+    "124": "Right",
+    "256": "R2",
+    "257": "L2",
+    "9": "R3",
+    "48": "Touchpad",
+    "36": "Options",
+    "43": "Share",
+    "47": "PS",
+    "18": "Pyramid",
+    "19": "Pyramid",
+    "34": "LookUp",
+    "40": "LookDown",
+    "38": "LookLeft",
+    "37": "LookRight"
+  },
+  "hip": {
+    "gain": 0.015,
+    "smoothing_ms": 0,
+    "cm360": 0,
+    "x": [],
+    "y": []
+  },
+  "ads": {
+    "gain": 0.015,
+    "smoothing_ms": 0,
+    "cm360": 0,
+    "x": [],
+    "y": []
+  },
+  "radial_deadzone": 0,
+  "calibration": {
+    "date": "",
+    "notes": "Начальный профиль ARC Raiders. Проверьте назначения и чувствительность в игре; LUT не измерена."
+  }
+}

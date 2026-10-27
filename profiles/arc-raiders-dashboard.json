@@ -1,55 +1,88 @@
 {
-  "version": 1,
-  "name": "ARC Raiders · консольный preset",
-  "dpi": 0,
+  "ads": {
+    "cm360": 0,
+    "gain": 0.015,
+    "smoothing_ms": 0,
+    "x": [],
+    "y": []
+  },
   "binds": {
-    "13": "W",
     "0": "A",
     "1": "S",
-    "2": "D",
-    "49": "Cross",
-    "15": "Box",
-    "14": "Box",
-    "8": "Moon",
+    "11": "RecoilIncrease",
     "12": "L1",
-    "3": "R1",
-    "56": "L3",
-    "60": "L3",
-    "126": "Up",
-    "125": "Down",
     "123": "Left",
     "124": "Right",
-    "256": "R2",
-    "257": "L2",
-    "9": "R3",
-    "48": "Touchpad",
-    "36": "Options",
-    "43": "Share",
-    "47": "PS",
+    "125": "Down",
+    "126": "Up",
+    "13": "W",
+    "14": "Box",
+    "15": "Box",
+    "17": "Up",
     "18": "Pyramid",
     "19": "Pyramid",
+    "2": "D",
+    "20": "HoldRight",
+    "256": "R2",
+    "257": "L2",
+    "258": "R3",
+    "259": "Down",
+    "260": "Right",
+    "3": "R1",
     "34": "LookUp",
-    "40": "LookDown",
+    "36": "Options",
+    "37": "LookRight",
     "38": "LookLeft",
-    "37": "LookRight"
+    "40": "LookDown",
+    "43": "Share",
+    "47": "PS",
+    "48": "Touchpad",
+    "49": "Cross",
+    "5": "Left",
+    "54": "Moon",
+    "55": "Moon",
+    "56": "L3",
+    "57": "DodgeRoll",
+    "60": "L3",
+    "7": "Moon",
+    "8": "RecoilToggle",
+    "9": "RecoilDecrease"
   },
-  "hip": {
-    "gain": 0.015,
-    "smoothing_ms": 0,
-    "cm360": 0,
-    "x": [],
-    "y": []
-  },
-  "ads": {
-    "gain": 0.015,
-    "smoothing_ms": 0,
-    "cm360": 0,
-    "x": [],
-    "y": []
-  },
-  "radial_deadzone": 0,
   "calibration": {
     "date": "",
-    "notes": "Начальный профиль ARC Raiders. Проверьте назначения и чувствительность в игре; LUT не измерена."
-  }
+    "notes": "Авторская конфигурация ARC Raiders. Настройки мыши и бинды подобраны в игре. Hip/ADS gain 0.015; измеренной LUT нет."
+  },
+  "dpi": 800,
+  "hip": {
+    "cm360": 0,
+    "gain": 0.015,
+    "smoothing_ms": 0,
+    "x": [],
+    "y": []
+  },
+  "name": "ARC Raiders · Трещотка · компенсация",
+  "radial_deadzone": 0.12,
+  "radial_menu": {
+    "enabled": true,
+    "gain": 0.008,
+    "open_actions": [
+      "L1",
+      "R1",
+      "Left"
+    ],
+    "open_delay_ms": 195
+  },
+  "rapid_fire": {
+    "enabled": false,
+    "interval_ms": 120,
+    "press_ms": 40
+  },
+  "recoil": {
+    "enabled": true,
+    "mode": "pulse",
+    "period_ms": 120,
+    "pulse_peak": 0.11,
+    "vertical": 0.075
+  },
+  "version": 1
 }

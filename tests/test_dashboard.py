@@ -24,7 +24,8 @@ BASE = loads((ROOT / 'profiles/arc-raiders-linear-zero-deadzone.json').read_byte
 class RadialMenuTests(unittest.TestCase):
     def test_schema_roundtrip(self):
         p = copy.deepcopy(PRESET)
-        self.assertNotIn('radial_menu', p)
+        p.pop('radial_menu', None)
+        self.assertEqual(validate(loads(encode(p))), p)
         p['radial_menu'] = dict(enabled=True, gain=.015, open_actions=['L1', 'R1', 'Left'])
         self.assertEqual(validate(loads(encode(p))), p)
         for delay in (0, 350, 1500):
@@ -321,7 +322,9 @@ class Schema(unittest.TestCase):
         validate(PRESET)
         self.assertEqual(PRESET['binds']['14'], PRESET['binds']['15'])
         self.assertEqual(PRESET['hip'], PRESET['ads'])
-        self.assertEqual(set(PRESET['binds'].values()), set(__import__('dashboard.schema', fromlist=['ACTIONS']).ACTIONS) - {'RecoilToggle','RecoilDecrease','RecoilIncrease','RapidFireToggle','HoldLeft','HoldRight','DodgeRoll'})
+        for key, action in {'57':'DodgeRoll','5':'Left','3':'R1','17':'Up','258':'R3','259':'Down','260':'Right'}.items():
+            self.assertEqual(PRESET['binds'][key], action)
+        self.assertEqual(set(PRESET['binds'].values()), set(__import__('dashboard.schema', fromlist=['ACTIONS']).ACTIONS) - {'RapidFireToggle','HoldLeft'})
 
     def test_rapid_fire(self):
         p = copy.deepcopy(PRESET)

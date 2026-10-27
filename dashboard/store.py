@@ -7,8 +7,8 @@ import uuid
 from .schema import Problem, encode, loads, validate, require, digest, LIMIT
 
 RECOMMENDED = {'response': 'Linear', 'lookBoost': 0, 'ramp': 0, 'lookDeadzone': 0,
-               'moveDeadzone': 15, 'horizontal': 65, 'vertical': 55, 'zoom': 25,
-               'scoped': 50, 'aimAssist': False, 'lookBoostVertical': 0,
+               'moveDeadzone': 15, 'horizontal': 160, 'vertical': 160, 'zoom': 25,
+               'scoped': 50, 'aimAssist': True, 'lookBoostVertical': 0,
                'zoomBoostHorizontal': 0, 'zoomBoostVertical': 0, 'zoomRamp': 0}
 DETAILED_SETTINGS = {'lookBoostVertical', 'zoomBoostHorizontal', 'zoomBoostVertical', 'zoomRamp'}
 
