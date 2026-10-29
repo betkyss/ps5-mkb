@@ -11,3 +11,17 @@ store.json
 *.sock
 node_modules/
 .venv/
+
+# Local agent skills, BMAD configuration and working artifacts.
+/.agents/
+/.claude/
+/.codex/
+/_bmad/
+/_bmad-output/
+/AGENTS.md
+
+# Local research and temporary exports.
+/research/
+/research2/
+/undefined/
+/xim-matrix-which-games-need-sab-games-that-detect-xim-sab-series-part-1.txt
